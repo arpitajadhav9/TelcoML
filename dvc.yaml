@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - Dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv
+    - src/train.py
+    outs:
+    - models/model.joblib
